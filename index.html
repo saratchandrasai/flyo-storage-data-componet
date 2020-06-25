@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Fylo data storage component</title>
+
+</head>
+<body>
+  <div class="images">
+    <img class="logo" src="images/logo.svg" alt="logo" />
+
+    <div class="img1">
+      <img class="img1" src="images/icon-document.svg" alt="document-icon" />
+    </div>
+
+    <div class="img2">
+      <img class="img2" src="images/icon-folder.svg"   alt="folder-icon"  />
+    </div>
+
+    <div class="img3">
+      <img class="img3" src="images/icon-upload.svg"   alt="upload-icon"  />
+    </div>
+  </div>
+
+  <div class="storage">
+    <p>
+      You've used <em><span id="demo"></span> GB</em> of your storage
+    </p>
+
+    <div class="slide">
+      <input type="range" min="0" max="1000" value="815" class="slider" id="myRange">
+      <p>0 GB <span class="gb">1000 GB</span></p>
+    </div>
+
+    <div class="shape">
+      <p class="colour"><span class="number" id="leftvalue"></span> GB LEFT</p>
+      <div class="triangle">
+
+      </div>
+    </div>
+    <script>
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      var leftgb = document.getElementById("leftvalue");
+      output.innerHTML = slider.value;
+      leftgb.innerHTML = 1000-slider.value;
+      slider.oninput = function() {
+        output.innerHTML = this.value;
+        leftgb.innerHTML = 1000-this.value;
+     }
+
+    </script>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/saratchandrasai" target="_blank"> Danda Sarat Chandra Sai</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+html {
+  background-color: HSL(229, 57%, 11%);
+}
+
+body {
+  border: 0;
+  background-image: url("images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  color: white;
+  height:420px;
+  font-family:  'Raleway', sans-serif;
+  font-size: 14px;
+  margin:0;
+  position: relative;
+  top:313px;
+}
+
+p {
+  margin:0;
+  font-weight: 400;
+}
+em {
+  font-weight: 700;
+}
+
+a:link {
+  color:#009B77;
+  text-decoration: none;
+}
+a:visited {
+  color:#DFCFBE;
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: none;
+  color:#45B8AC;
+}
+a:hover {
+  text-decoration: none;
+  color:#45B8AC;
+}
+.images {
+  background-color:#1D2C67;
+  border:1px solid #1D2C67;
+  border-radius: 10px 70px 10px 10px;
+  margin:0 280px;
+  padding:30px 30px 0;
+  width:250px;
+  position:relative;
+  bottom:80px;
+}
+
+.logo {
+  display: block;
+  margin-bottom:20px;
+}
+
+div.img1, div.img2, div.img3 {
+  background-color: black;
+  display: inline-block;
+  height:40px;
+  width:40px;
+  border-radius: 10px;
+  margin-right:10px;
+  margin-bottom:30px;
+}
+
+img.img1 {
+  padding:8px 10px 8px;
+}
+
+img.img2 {
+  padding:10px 8px 10px;
+}
+
+img.img3 {
+  padding:12px 8px 12px;
+}
+
+.storage {
+  height:91.5px;
+  width:530px;
+  background-color: #1D2C67;
+  position: relative;
+  left:615px;
+  bottom:232px;
+  padding:30px;
+}
+
+.slide {
+  padding-top:15px;
+  width:97%;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  background-color: HSL(229, 57%, 11%);
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.gb {
+  position:absolute;
+  right :52.69px;
+}
+p.colour {
+  color:#808080;
+  font-weight: 500;
+}
+.number {
+  color:black;
+  font-size: large;
+  margin:0;
+  border:0;
+  font-weight: 700;
+}
+
+.shape {
+  background-color: #FDF5E2;
+  border-radius: 5px;
+  height:20px;
+  width:100px;
+  padding:10px 20px 20px;
+  position:relative;
+  left:374.1px;
+  bottom:133px;
+}
+
+.triangle {
+  width:0;
+  height:0;
+  border-top: 40px solid #FDF5E2;
+  border-left: 40px solid transparent;
+  position:absolute;
+  right:0;
+}
+
+.attribution {
+  position: absolute;
+  left:500px;
+  bottom:0;
+}
